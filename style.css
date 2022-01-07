@@ -1,0 +1,154 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-image: url("./blurry-gradient-haikei.svg");
+  height: 97vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  background-color: #fa734a;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 6rem 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.heading_text {
+  color: #ffffff;
+  font-weight: 400 !important;
+  padding: 0rem 1rem;
+}
+
+.container {
+  box-shadow: 0 0 6rem 0 rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.display > input {
+  background-color: #232323;
+  text-align: right;
+  border: none;
+  width: 24rem;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  color: #fefefe;
+}
+
+.display > input:focus-visible {
+    outline: none;
+}
+
+.keys > button:focus-visible {
+    outline: none;
+}
+
+.keys {
+  display: grid;
+  grid-template-areas:
+    ". . . ."
+    "seven eight nine del"
+    "four five six equal"
+    "one two three equal"
+    "zero point clear equal";
+  grid-gap: 0.1rem;
+  height: 19rem;
+  background-color: #b6b6b6;
+}
+
+.keys > button {
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  border: none;
+  color: #222222;
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.del {
+  grid-area: del;
+}
+.zero {
+  grid-area: zero;
+}
+.point {
+  grid-area: point;
+}
+.clear {
+  grid-area: clear;
+}
+
+
+.equal {
+  grid-area: equal;
+  background-color: #f88764 !important;
+}
+
+.operations {
+  background-color: #e7e6e6 !important;
+}
+
+
+
+/* Hover & Active Effects For Buttons */
+
+.operations:hover {
+  background-color: #c9c9c9 !important ;
+}
+
+.numbers:hover {
+  background-color: #ececec !important ;
+}
+
+.equal:hover {
+  background-color: #fa734a !important;
+}
+
+.operations:active {
+  background-color: #979797 !important ;
+}
+
+.numbers:active {
+  background-color: #cecece !important ;
+}
+
+.equal:active {
+  background-color: #f85e2f !important;
+}
